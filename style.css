@@ -1,0 +1,46 @@
+body{
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;;
+    background-color: rgb(20, 20, 20);
+    color: rgb(171, 170, 170);
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+}
+h1{
+    color: white;
+    cursor: default;
+}
+table{
+    height: 40px;
+}
+td img{
+    border-radius: 10px;
+    cursor: pointer;
+}
+td{
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+.perfil:hover{
+    color: white;
+}
+.perfil:hover img{
+    outline: 2px solid white;
+}
+div{
+    margin-top: 50px;
+}
+button{
+    padding: 1px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    width: 300px;
+    padding: 20px;
+    background-color: transparent;
+    color: rgb(180, 180, 180);
+    border: 2px solid;
+}
+button:hover{
+    color: white;
+}

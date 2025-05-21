@@ -1,0 +1,187 @@
+body{   
+    margin: 0;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;;
+    font-size: small;
+}
+header{
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 6;
+    justify-content: space-between;
+    font-size: 12px;
+}
+header.transparent{
+    background: linear-gradient(to top, rgba(0,0,0,0), rgb(0, 0, 0));
+}
+main{
+    margin: 40px;
+}
+main h1{
+    margin-left: 15px;
+    cursor: default;
+}
+div.sombra{
+    position: relative;
+    background-color: black;
+    z-index: 0;
+    width: 100%;
+    height: 730px;
+    max-height: 100%;
+    min-width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgb(20, 20, 20));
+}
+.primarySearch{
+    margin-left: 30px;
+}
+.secondarySearch{
+    margin-right: 30px;
+}
+.legenda div{
+    text-shadow: 1px 1px 2px black;
+    margin-left: 22px;
+}
+.topics nav, ul, li{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin-top: 10px;
+}
+header nav, li, i{
+    margin-top: 9px;
+    cursor: pointer;
+}
+.inicio{
+    cursor: default;
+}
+.inicio:hover{
+    color: white;
+}
+header li:hover{
+    color: rgb(151, 151, 151);
+    transition: 0.25s ease-in-out;
+}
+.netflix{
+    width: 70px;
+    height: 70px;
+}
+.icon{
+    margin-top: 5px;
+    border-radius: 5px;
+    height:30px;
+    width: 30;
+}
+.video video{
+    position: absolute;
+    z-index: -1;
+    max-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hxhlogo{
+    margin-left: 22px;
+    margin-top: 260px;
+}
+.buttons a{
+    list-style: none;
+    text-decoration: none;
+}
+.buttons button{
+    display: flex; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px; 
+    width: 150px; 
+    justify-content: space-around;
+    cursor: pointer;
+}
+#more-info{
+    width: 160px;
+    color: white;
+    background-color: #757676;
+    background-color: #555555a0;
+}
+#more-info:hover{
+    background-color: #4a4a4a8e;
+}
+.info-button:hover{
+    background-color: rgb(182, 182, 182);
+    transition: 0.3s ease-in-out;
+}
+.buttons{
+    z-index: 2;
+    display: flex;
+    gap: 15px;
+}
+.conteudo{
+    padding: 1px;
+    justify-content: center;
+    height:200px;
+    position: relative;
+    overflow: visible;
+    z-index: 2;
+}
+.carrossel img{
+    z-index: 1;
+    border-radius: 5px;
+    width: 200px;
+}
+#continuar{
+    margin-top: 50px;
+    max-width: 100%;
+    z-index: 1;
+}
+.carrossel{
+    padding: 5px;
+    margin: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain; 
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+.barra-continuar{
+    scale: 0.8;
+    max-width: 100%;
+    max-height: 5px;
+    z-index: 1;
+}
+.div-continuar:hover .barra-continuar{
+    transition: 0.13s ease-in;
+    opacity: 57%;
+}
+.conteudo .div-continuar:hover .filme {
+    transform: scale(1.03);
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgb(155, 39, 39);
+}
+.filme{
+    cursor: pointer;
+}
+.conteudo .filme:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgb(155, 39, 39);
+}
+.brands{
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    gap: 30px;
+    width: 200px;
+}
+.fa-brands, .fas{
+    font-size: 20px;
+}
+i{
+    color: white;
+}
